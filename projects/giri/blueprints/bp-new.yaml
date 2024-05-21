@@ -4,6 +4,19 @@ metadata:
   name: bp-new
   project: giri
 spec:
+  base:
+    name: minimal
+    version: 2.7.0
+  componentsCriticality:
+  - name: xwing-fail
+  customAddons:
+  - name: xwing-fail
+    version: v1
+  - name: xwing-fail2
+    version: v1
+  defaultAddons:
+    enableIngress: true
   driftWebhook:
     enabled: true
   type: custom
+  version: v1-test
