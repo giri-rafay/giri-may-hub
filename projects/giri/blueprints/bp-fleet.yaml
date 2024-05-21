@@ -4,6 +4,15 @@ metadata:
   name: bp-fleet
   project: giri
 spec:
+  base:
+    name: minimal
+    version: 2.7.0
+  defaultAddons:
+    enableIngress: true
   driftWebhook:
     enabled: true
+  placement:
+    fleetValues:
+    - rafay
   type: custom
+  version: v1
