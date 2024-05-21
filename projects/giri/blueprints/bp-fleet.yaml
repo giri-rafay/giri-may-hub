@@ -15,4 +15,4 @@ spec:
     fleetValues:
     - rafay
   type: custom
-  version: v4
+  version: v5
