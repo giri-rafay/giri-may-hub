@@ -1,0 +1,11 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: xwing-fail2
+  project: giri
+spec:
+  artifact:
+    artifact: {}
+    type: Yaml
+  namespace: xwing2
+  sharing: {}
