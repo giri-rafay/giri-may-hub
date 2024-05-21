@@ -5,7 +5,10 @@ metadata:
   project: giri
 spec:
   artifact:
-    artifact: {}
+    artifact:
+      paths:
+      - name: file://artifacts/xwing-pass/http-sw-app.yaml
     type: Yaml
   namespace: xwing-pass
   sharing: {}
+  version: v1
