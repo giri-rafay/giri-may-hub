@@ -23,4 +23,4 @@ spec:
     fleetValues:
     - giri
   type: custom
-  version: v2
+  version: v3
