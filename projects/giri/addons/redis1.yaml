@@ -1,0 +1,15 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: redis1
+  project: giri
+spec:
+  artifact:
+    artifact:
+      catalog: default-bitnami
+      chartName: redis
+      chartVersion: 19.3.2
+    type: Helm
+  namespace: redis
+  sharing: {}
+  version: redis-v1

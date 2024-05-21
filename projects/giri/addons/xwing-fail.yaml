@@ -1,0 +1,14 @@
+apiVersion: infra.k8smgmt.io/v3
+kind: Addon
+metadata:
+  name: xwing-fail
+  project: giri
+spec:
+  artifact:
+    artifact:
+      paths:
+      - name: file://artifacts/xwing-fail/http-sw-app.yaml
+    type: Yaml
+  namespace: xwing-app
+  sharing: {}
+  version: v1
