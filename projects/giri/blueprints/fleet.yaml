@@ -19,5 +19,8 @@ spec:
     enableIngress: true
   driftWebhook:
     enabled: true
+  placement:
+    fleetValues:
+    - giri
   type: custom
-  version: v1
+  version: v2
