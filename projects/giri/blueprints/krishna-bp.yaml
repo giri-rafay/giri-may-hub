@@ -4,6 +4,12 @@ metadata:
   name: krishna-bp
   project: giri
 spec:
+  base:
+    name: minimal
+    version: 2.7.0
+  defaultAddons:
+    enableIngress: true
   driftWebhook:
     enabled: true
   type: custom
+  version: v1
