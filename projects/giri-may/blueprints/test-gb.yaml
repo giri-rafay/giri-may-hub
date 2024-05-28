@@ -1,12 +1,17 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: np
-  project: giri
+  name: test-gb
+  project: giri-may
 spec:
   base:
     name: default-aks
     version: 2.7.0
+  componentsCriticality:
+  - name: xwing-fail
+  customAddons:
+  - name: xwing-fail
+    version: v1
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
@@ -17,12 +22,16 @@ spec:
         customizationEnabled: true
   driftWebhook:
     enabled: true
-  networkPolicy:
-    policies:
-    - name: p2
-      version: v1
+  opaPolicy:
+    opaPolicy:
+    - name: policy-privileged
+      version: version-1716753356
     profile:
       name: default
       version: latest
-  type: custom
-  version: v1
+  sharing:
+    enabled: true
+    projects:
+    - name: '*'
+  type: golden
+  version: test-gb-v4

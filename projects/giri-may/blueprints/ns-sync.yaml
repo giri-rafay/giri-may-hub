@@ -1,19 +1,12 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: git-custom
-  project: giri
+  name: ns-sync
+  project: giri-may
 spec:
   base:
     name: default-aks
     version: 2.7.0
-  componentsCriticality:
-  - name: redis1
-  customAddons:
-  - name: xwing-fail
-    version: v1
-  - name: redis1
-    version: redis-v1
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
@@ -24,5 +17,8 @@ spec:
         customizationEnabled: true
   driftWebhook:
     enabled: true
+  namespaceConfig:
+    enableSync: true
+    syncType: Managed
   type: custom
-  version: version2-custom
+  version: v1
