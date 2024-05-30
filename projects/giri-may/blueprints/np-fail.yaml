@@ -4,6 +4,27 @@ metadata:
   name: np-fail
   project: giri-may
 spec:
+  base:
+    name: default-aks
+    version: 2.7.0
+  componentsCriticality:
+  - name: network-policy
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
+    monitoring:
+      metricsServer:
+        customizationEnabled: true
+      prometheusAdapter:
+        customizationEnabled: true
   driftWebhook:
     enabled: true
+  networkPolicy:
+    policies:
+    - name: ccnp2
+      version: v2
+    profile:
+      name: default
+      version: latest
   type: custom
+  version: v1
