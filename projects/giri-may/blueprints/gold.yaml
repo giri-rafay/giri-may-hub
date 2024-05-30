@@ -7,8 +7,6 @@ spec:
   base:
     name: default
     version: 2.7.0
-  componentsCriticality:
-  - name: network-policy
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
@@ -19,4 +17,4 @@ spec:
       name: default
       version: latest
   type: golden
-  version: versionm1
+  version: fdfd
