@@ -13,6 +13,6 @@ spec:
     enabled: true
   namespaceConfig:
     enableSync: true
-    syncType: Unmanaged
+    syncType: Managed
   type: custom
-  version: v1
+  version: v2
