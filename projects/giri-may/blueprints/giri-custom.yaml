@@ -1,22 +1,16 @@
 apiVersion: infra.k8smgmt.io/v3
 kind: Blueprint
 metadata:
-  name: giri-golden
+  name: giri-custom
   project: giri-may
 spec:
   base:
-    name: default
-    version: 2.7.0
-  componentsCriticality:
-  - name: network-policy
+    name: giri-golden
+    version: v1
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
   driftWebhook:
     enabled: true
-  networkPolicy:
-    profile:
-      name: default
-      version: latest
-  type: golden
+  type: custom
   version: v1
