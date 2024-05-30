@@ -7,8 +7,6 @@ spec:
   base:
     name: default-aks
     version: 2.7.0
-  componentsCriticality:
-  - name: network-policy
   defaultAddons:
     enableIngress: true
     enableMonitoring: true
@@ -31,4 +29,4 @@ spec:
       name: default
       version: latest
   type: custom
-  version: v3
+  version: v4
