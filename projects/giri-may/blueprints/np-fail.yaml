@@ -23,8 +23,10 @@ spec:
     policies:
     - name: ccnp2
       version: v2
+    - name: ccnp3
+      version: v1
     profile:
       name: default
       version: latest
   type: custom
-  version: v1
+  version: v2
