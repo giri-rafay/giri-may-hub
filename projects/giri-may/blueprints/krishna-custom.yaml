@@ -4,6 +4,13 @@ metadata:
   name: krishna-custom
   project: giri-may
 spec:
+  base:
+    name: krishna-gold
+    version: version1
+  defaultAddons:
+    enableIngress: true
+    enableMonitoring: true
   driftWebhook:
     enabled: true
   type: custom
+  version: v1
