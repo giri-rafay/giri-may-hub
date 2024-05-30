@@ -57,4 +57,4 @@ spec:
       name: default
       version: latest
   type: golden
-  version: v1
+  version: v2
